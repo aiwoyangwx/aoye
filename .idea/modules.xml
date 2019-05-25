@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/aoye.iml" filepath="$PROJECT_DIR$/.idea/aoye.iml" />
       <module fileurl="file://$PROJECT_DIR$/ay-common/ay-common.iml" filepath="$PROJECT_DIR$/ay-common/ay-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ay-euraka/ay-euraka.iml" filepath="$PROJECT_DIR$/ay-euraka/ay-euraka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ay-gateway/ay-gateway.iml" filepath="$PROJECT_DIR$/ay-gateway/ay-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/ay-product/ay-product.iml" filepath="$PROJECT_DIR$/ay-product/ay-product.iml" />
       <module fileurl="file://$PROJECT_DIR$/ay-product/ay-product-interface/ay-product-interface.iml" filepath="$PROJECT_DIR$/ay-product/ay-product-interface/ay-product-interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/ay-product/ay-product-service/ay-product-service.iml" filepath="$PROJECT_DIR$/ay-product/ay-product-service/ay-product-service.iml" />

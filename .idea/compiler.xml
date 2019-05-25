@@ -6,6 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="ay-gateway" />
+        <module name="ay-euraka" />
         <module name="ay-common" />
         <module name="ay-product-service" />
         <module name="ay-product-interface" />
@@ -13,6 +15,8 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ay-common" target="1.8" />
+      <module name="ay-euraka" target="1.8" />
+      <module name="ay-gateway" target="1.8" />
       <module name="ay-product" target="1.8" />
       <module name="ay-product-interface" target="1.8" />
       <module name="ay-product-service" target="1.8" />
@@ -20,6 +24,8 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ay-euraka" options="-parameters" />
+      <module name="ay-gateway" options="-parameters" />
       <module name="ay-product-interface" options="-parameters" />
       <module name="ay-product-service" options="-parameters" />
     </option>
