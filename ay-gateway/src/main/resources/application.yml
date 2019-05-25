@@ -1,0 +1,43 @@
+server:
+  port: 10010
+spring:
+  application:
+    name: api-gateway
+  #上传文件设限额，上线时根据实际情况调整
+  servlet:
+    multipart:
+      max-file-size: 500MB
+      max-request-size: 5000MB
+      enabled: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
+    registry-fetch-interval-seconds: 5
+  instance:
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
+    instance-id: ${spring.application.name}:${server.port}
+zuul:
+  prefix: /api # 添加路由前缀
+  retryable: true
+  routes:
+    # 微服务名: 要映射到到地址
+    product-service: /product/**
+    # 忽略网关
+  ignored-services:
+    - product-service # 忽略upload-service服务
+  set-content-length: true
+ribbon:
+  ConnectTimeout: 600000 # 连接超时时间(ms)  默认250 todo
+  ReadTimeout:  600000 # 通信超时时间(ms) 默认2000  todo
+  OkToRetryOnAllOperations: true # 是否对所有操作重试
+  MaxAutoRetriesNextServer: 1 # 同一服务不同实例的重试次数
+  MaxAutoRetries: 1 # 同一实例的重试次数
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMillisecond: 600000 # 熔断超时时长：默认10000ms todo

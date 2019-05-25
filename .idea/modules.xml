@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/aoye.iml" filepath="$PROJECT_DIR$/.idea/aoye.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ay-common/ay-common.iml" filepath="$PROJECT_DIR$/ay-common/ay-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ay-product/ay-product.iml" filepath="$PROJECT_DIR$/ay-product/ay-product.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ay-product/ay-product-interface/ay-product-interface.iml" filepath="$PROJECT_DIR$/ay-product/ay-product-interface/ay-product-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ay-product/ay-product-service/ay-product-service.iml" filepath="$PROJECT_DIR$/ay-product/ay-product-service/ay-product-service.iml" />
+    </modules>
+  </component>
+</project>
