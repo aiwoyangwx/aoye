@@ -129,9 +129,7 @@ public class InstallerController {
         if (file == null) {
             throw new AyException(ExceptionEnum.INCORRECT_PARAMS);
         }
-        String uploadPath = null;
-
-        uploadPath = installerService.getUploadPath(file);
+        String uploadPath = installerService.getUploadPath(file);
         return ResponseEntity.ok(uploadPath);
     }
 
