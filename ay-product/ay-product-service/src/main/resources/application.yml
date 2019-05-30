@@ -48,10 +48,8 @@ ay:
   worker:
     workerId: 1   #机器编号 上线应改为实际编号
     datacenterId: 1 #
-#文件上传位置，上线时改为实际位置
+#文件上传位置，上线时改为实际位置//todo
 installersPath: D:\installers
-#上传成功图片url
-successImgUrl: http://192.168.0.166:10010/api/product/success.png
 
 
 

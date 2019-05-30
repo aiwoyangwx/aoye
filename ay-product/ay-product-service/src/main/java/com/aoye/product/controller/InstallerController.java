@@ -11,7 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -23,7 +22,7 @@ import java.net.URLEncoder;
 
 @RestController
 @RequestMapping("installer")
-public class InstallerController {
+public class InstallerController{
 
     @Autowired
     private InstallerService installerService;
@@ -124,15 +123,28 @@ public class InstallerController {
     * @Description:    上传
     */
     @PostMapping("upload")
-    public ResponseEntity<String> uploadInstaller(
+    public ResponseEntity<Void> uploadInstaller(
             @RequestParam("file") MultipartFile file,HttpServletRequest request){
         if (file == null) {
             throw new AyException(ExceptionEnum.INCORRECT_PARAMS);
         }
-        String uploadPath = installerService.getUploadPath(file);
-        return ResponseEntity.ok(uploadPath);
+        installerService.uploadFile(file);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
-
+    /**
+     * @Author: Alex
+     * @CreateDate: 2019/5/29
+     * @Description: 根据文件名删除文件
+     *
+     */
+    @DeleteMapping("upload")
+    public ResponseEntity<Void> uploadInstaller(String fileName){
+        if (fileName == null) {
+            throw new AyException(ExceptionEnum.INCORRECT_PARAMS);
+        }
+        installerService.deleteFileByFilename(fileName);
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
     /**
     * @Author:         Alex
     * @CreateDate:     2019/5/10

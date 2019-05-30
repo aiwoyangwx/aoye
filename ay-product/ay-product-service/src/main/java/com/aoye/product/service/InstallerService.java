@@ -44,9 +44,6 @@ public class InstallerService {
     @Value("${installersPath}")
     private String filesPath;
 
-    @Value("${successImgUrl}")
-    private String successImgUrl;
-
     /**
      * @Author: Alex
      * @CreateDate: 2019/5/10
@@ -64,10 +61,6 @@ public class InstallerService {
         //保存
         installer.setId(idWorker.nextId());
         installer.setCreateTime(new Date());
-        String fileName = installer.getFileName();
-        String[] strings = fileName.substring(successImgUrl.length()+1).trim().split("\\?");
-        installer.setFileName(strings[0]);
-        installer.setFileSize(Long.parseLong(strings[1]));
         int insert = installerMapper.insert(installer);
         if (insert != 1) {
             throw new AyException(ExceptionEnum.FAIl_TO_ADD);
@@ -128,7 +121,7 @@ public class InstallerService {
         // 过滤
         Example example = new Example(Installer.class);
         if (StringUtils.isNotBlank(key)) {
-            example.createCriteria().andLike("vresionCode", "%" + key + "%");
+            example.createCriteria().andLike("vresion_code", "%" + key + "%");
         }
         if (StringUtils.isNotBlank(sortBy)) {
             // 排序
@@ -161,10 +154,9 @@ public class InstallerService {
     /**
     * @Author:         Alex
     * @CreateDate:     2019/5/10
-    * @Description:    作用描述
+    * @Description:    查询是否有重名客户端
     */
-    public String getUploadPath(MultipartFile file) {
-
+    public void uploadFile(MultipartFile file) {
             // 1、生成保存目录
             File dir = new File(filesPath);
             if (!dir.exists()) {
@@ -179,16 +171,22 @@ public class InstallerService {
             }catch (Exception e){
                 e.printStackTrace();
             }
-            // 3、返回成功路径
-            String path = successImgUrl+"?"+file.getOriginalFilename()+"?"+file.getSize();
-            return path;
     }
+
+    public void deleteFileByFilename(String fileName) {
+        File file = new File(filesPath+"/"+fileName);
+        if (file != null) {
+            file.delete();
+        }
+    }
+
+
     /**
      * @Author: Alex
      * @CreateDate: 2019/5/10
      * @Description: 根据分类和版本号查客户端
      */
-    public String getDownloadPath(Long cid, Integer versionNum) {
+   /* public String getDownloadPath(Long cid, Integer versionNum) {
         String path = "";
         Example example = new Example(Installer.class);
         example.createCriteria().andEqualTo("cid", cid)
@@ -199,5 +197,9 @@ public class InstallerService {
             path = filesPath + "/" + installers.get(0).getFileName();
         }
         return path;
-    }
+    }*/
+
+
+
+
 }
