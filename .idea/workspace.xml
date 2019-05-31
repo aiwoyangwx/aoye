@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="86c9ce82-e16e-495f-98f9-8fa6bf41837d" name="Default Changelist" comment="">
+    <list default="true" id="86c9ce82-e16e-495f-98f9-8fa6bf41837d" name="Default Changelist" comment="完成客户端上传调整">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ay-product/ay-product-interface/src/main/java/com/aoye/product/pojo/Province.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ay-product/ay-product-interface/src/main/java/com/aoye/product/pojo/UpdateParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ay-product/ay-product-interface/src/main/java/com/aoye/product/vo/UpdateParamVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/mapper/ProvinceMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ay-product/ay-product-interface/src/main/java/com/aoye/product/pojo/RunningMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/ay-product/ay-product-interface/src/main/java/com/aoye/product/pojo/RunningMachine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ay-product/ay-product-interface/src/main/java/com/aoye/product/vo/RunningMachineVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ay-product/ay-product-interface/src/main/java/com/aoye/product/vo/RunningMachineVO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/controller/InstallerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/controller/InstallerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/controller/RunningMachineController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/controller/RunningMachineController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/controller/UpdateParamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/controller/UpdateParamController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/mapper/UpdateParamMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/mapper/UpdateParamMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/service/InstallerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/service/InstallerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ay-product/ay-product-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ay-product/ay-product-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/service/RunningMachineService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/service/RunningMachineService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/service/UpdateParamService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/service/UpdateParamService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/ay-product/target/" />
     <ignored path="$PROJECT_DIR$/ay-product/ay-product-service/target/" />
@@ -26,37 +37,34 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/controller/InstallerController.java">
+        <entry file="file://$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/controller/CategoryController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="128" column="46" lean-forward="true" selection-start-line="128" selection-start-column="46" selection-end-line="128" selection-end-column="46" />
+            <state relative-caret-position="351">
+              <caret line="82" column="105" lean-forward="true" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="105" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ay-common/src/main/java/com/aoye/common/enums/ExceptionEnum.java">
+        <entry file="file://$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/controller/UpdateParamController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+            <state relative-caret-position="401">
+              <caret line="74" column="25" lean-forward="true" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.5.RELEASE/spring-web-5.0.5.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+        <entry file="file://$PROJECT_DIR$/ay-product/ay-product-interface/src/main/java/com/aoye/product/pojo/Province.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="217" selection-start-line="217" selection-end-line="217" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/service/InstallerService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="163" column="13" lean-forward="true" selection-start-line="163" selection-start-column="13" selection-end-line="163" selection-end-column="13" />
+            <state relative-caret-position="216">
+              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -66,8 +74,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -75,6 +83,10 @@
     <findStrings>
       <find>delete</find>
       <find>upload</find>
+      <find>all</find>
+      <find>current_version_code</find>
+      <find>获取版本</find>
+      <find>post</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -85,10 +97,23 @@
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/ay-gateway/src/main/java/com/aoye/GatewayApplication.java" />
-        <option value="$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/controller/CategoryController.java" />
         <option value="$PROJECT_DIR$/ay-product/ay-product-service/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/service/InstallerService.java" />
         <option value="$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/controller/InstallerController.java" />
+        <option value="$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/service/InstallerService.java" />
+        <option value="$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/controller/RunningMachineController.java" />
+        <option value="$PROJECT_DIR$/ay-product/ay-product-interface/src/main/java/com/aoye/product/vo/RunningMachineVO.java" />
+        <option value="$PROJECT_DIR$/ay-product/ay-product-interface/src/main/java/com/aoye/product/pojo/RunningMachine.java" />
+        <option value="$PROJECT_DIR$/ay-product/ay-product-interface/src/main/java/com/aoye/product/pojo/provinces.java" />
+        <option value="$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/mapper/ProvinceMapper.java" />
+        <option value="$PROJECT_DIR$/ay-product/ay-product-interface/src/main/java/com/aoye/product/vo/UpdateParamVo.java" />
+        <option value="$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/service/RunningMachineService.java" />
+        <option value="$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/mapper/UpdateParamMapper.java" />
+        <option value="$PROJECT_DIR$/ay-product/ay-product-interface/src/main/java/com/aoye/product/pojo/UpdateParam.java" />
+        <option value="$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/service/UpdateParamService.java" />
+        <option value="$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/controller/CategoryController.java" />
+        <option value="$PROJECT_DIR$/ay-product/ay-product-interface/src/main/java/com/aoye/product/pojo/Provinces.java" />
+        <option value="$PROJECT_DIR$/ay-product/ay-product-interface/src/main/java/com/aoye/product/pojo/Province.java" />
+        <option value="$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/controller/UpdateParamController.java" />
       </list>
     </option>
   </component>
@@ -109,8 +134,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -122,6 +145,68 @@
               <item name="aoye" type="b2602c69:ProjectViewProjectNode" />
               <item name="aoye" type="462c0819:PsiDirectoryNode" />
               <item name="ay-product" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aoye" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aoye" type="462c0819:PsiDirectoryNode" />
+              <item name="ay-product" type="462c0819:PsiDirectoryNode" />
+              <item name="ay-product-interface" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aoye" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aoye" type="462c0819:PsiDirectoryNode" />
+              <item name="ay-product" type="462c0819:PsiDirectoryNode" />
+              <item name="ay-product-interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aoye" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aoye" type="462c0819:PsiDirectoryNode" />
+              <item name="ay-product" type="462c0819:PsiDirectoryNode" />
+              <item name="ay-product-interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aoye" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aoye" type="462c0819:PsiDirectoryNode" />
+              <item name="ay-product" type="462c0819:PsiDirectoryNode" />
+              <item name="ay-product-interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aoye" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aoye" type="462c0819:PsiDirectoryNode" />
+              <item name="ay-product" type="462c0819:PsiDirectoryNode" />
+              <item name="ay-product-interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aoye" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aoye" type="462c0819:PsiDirectoryNode" />
+              <item name="ay-product" type="462c0819:PsiDirectoryNode" />
+              <item name="ay-product-interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aoye" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aoye" type="462c0819:PsiDirectoryNode" />
+              <item name="ay-product" type="462c0819:PsiDirectoryNode" />
+              <item name="ay-product-interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="vo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="aoye" type="b2602c69:ProjectViewProjectNode" />
@@ -196,6 +281,18 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="aoye" type="462c0819:PsiDirectoryNode" />
               <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aoye" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aoye" type="462c0819:PsiDirectoryNode" />
+              <item name="ay-product" type="462c0819:PsiDirectoryNode" />
+              <item name="ay-product-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="aoye" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -218,6 +315,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -228,7 +327,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../aoye-manage-web" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -300,7 +399,9 @@
       <workItem from="1559091638326" duration="126000" />
       <workItem from="1559091794124" duration="19032000" />
       <workItem from="1559178324963" duration="44000" />
-      <workItem from="1559178473315" duration="4967000" />
+      <workItem from="1559178473315" duration="11490000" />
+      <workItem from="1559264838281" duration="10771000" />
+      <workItem from="1559287664447" duration="9083000" />
     </task>
     <task id="LOCAL-00001" summary="添加忽略文件">
       <created>1558762502886</created>
@@ -351,11 +452,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559037923637</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="完成客户端上传调整">
+      <created>1559200489412</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1559200489412</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42752000" />
+    <option name="totallyTimeSpent" value="69129000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -367,11 +475,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.62274367" visible="true" weight="0.23229614" />
-      <window_info id="Structure" order="1" sideWeight="0.3772563" side_tool="true" weight="0.23229614" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6212121" visible="true" weight="0.2387339" />
+      <window_info id="Structure" order="1" sideWeight="0.37942666" side_tool="true" weight="0.2387339" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -389,12 +497,12 @@
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.49570817" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.49624464" side_tool="true" weight="0.27222222" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.49892703" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.50429183" visible="true" weight="0.27222222" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.5037554" visible="true" weight="0.34" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -418,25 +526,12 @@
     <MESSAGE value="忽略文件.iml" />
     <MESSAGE value="忽略文件.iml&#10;添加升级参数实体类" />
     <MESSAGE value="产品分类、版本控制后端微调" />
-    <option name="LAST_COMMIT_MESSAGE" value="产品分类、版本控制后端微调" />
+    <MESSAGE value="完成客户端上传调整" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成客户端上传调整" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/ay-euraka/ay-euraka.iml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/controller/RunningMachineController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ay-product/ay-product-interface/src/main/java/com/aoye/product/vo/InstallerVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ay-euraka/src/main/java/com/leyou/EurekaApplication.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -449,27 +544,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/mapper/UpdateParamMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/service/UpdateParamService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/controller/UpdateParamController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -532,27 +606,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ay-product/ay-product-interface/src/main/java/com/aoye/product/pojo/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="16" column="52" lean-forward="true" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/service/CategoryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="76" column="63" selection-start-line="76" selection-start-column="63" selection-end-line="76" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/controller/CategoryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="31" column="51" lean-forward="true" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.5.RELEASE/spring-web-5.0.5.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="73">
@@ -581,20 +634,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.5.RELEASE/spring-web-5.0.5.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="217" selection-start-line="217" selection-end-line="217" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/service/InstallerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="163" column="13" lean-forward="true" selection-start-line="163" selection-start-column="13" selection-end-line="163" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ay-common/src/main/java/com/aoye/common/exception/AyException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -602,17 +641,199 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/controller/InstallerController.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.5.RELEASE/spring-web-5.0.5.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="128" column="46" lean-forward="true" selection-start-line="128" selection-start-column="46" selection-end-line="128" selection-end-column="46" />
+        <state relative-caret-position="476">
+          <caret line="217" selection-start-line="217" selection-end-line="217" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ay-common/src/main/java/com/aoye/common/enums/ExceptionEnum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+        <state relative-caret-position="342">
+          <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ay-product/ay-product-interface/src/main/java/com/aoye/product/vo/RunningMachineVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ay-product/ay-product-interface/src/main/java/com/aoye/product/vo/InstallerVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="6" column="38" lean-forward="true" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ay-product/ay-product-interface/src/main/java/com/aoye/product/pojo/Installer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="27" column="30" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/controller/InstallerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="44" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/controller/RunningMachineController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ay-product/ay-product-interface/src/main/java/com/aoye/product/pojo/RunningMachine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="12" selection-start-line="12" selection-end-line="13" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ay-product/ay-product-interface/src/main/java/com/aoye/product/pojo/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="16" column="52" lean-forward="true" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/mapper/CategoryMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/tk/mybatis/mapper-base/1.0.4/mapper-base-1.0.4.jar!/tk/mybatis/mapper/common/base/insert/InsertMapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/tk/mybatis/mapper-base/1.0.4/mapper-base-1.0.4.jar!/tk/mybatis/mapper/common/MySqlMapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ay-product/ay-product-interface/src/main/java/com/aoye/product/vo/UpdateParamVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/mapper/RunningMachineMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/mapper/InstallerMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/mapper/ProvinceMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/mapper/UpdateParamMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/service/InstallerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="120" column="57" selection-start-line="120" selection-start-column="46" selection-end-line="120" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/service/CategoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="97" column="4" selection-start-line="97" selection-start-column="4" selection-end-line="120" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ay-product/ay-product-interface/src/main/java/com/aoye/product/pojo/UpdateParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="38" column="31" lean-forward="true" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/service/UpdateParamService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="94" column="9" selection-start-line="94" selection-start-column="9" selection-end-line="94" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/service/RunningMachineService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1238">
+          <caret line="133" lean-forward="true" selection-start-line="133" selection-end-line="133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/controller/CategoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="82" column="105" lean-forward="true" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ay-product/ay-product-interface/src/main/java/com/aoye/product/pojo/Province.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ay-product/ay-product-service/src/main/java/com/aoye/product/controller/UpdateParamController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="74" column="25" lean-forward="true" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

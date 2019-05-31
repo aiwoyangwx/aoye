@@ -23,10 +23,7 @@ import tk.mybatis.mapper.entity.Example;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 @Service
 @PropertySource("classpath:application.yml")
@@ -121,7 +118,7 @@ public class InstallerService {
         // 过滤
         Example example = new Example(Installer.class);
         if (StringUtils.isNotBlank(key)) {
-            example.createCriteria().andLike("vresion_code", "%" + key + "%");
+            example.createCriteria().andLike("versionCode", "%" + key + "%");
         }
         if (StringUtils.isNotBlank(sortBy)) {
             // 排序
@@ -178,6 +175,16 @@ public class InstallerService {
         if (file != null) {
             file.delete();
         }
+    }
+
+    public List<Installer> getInstallersByCid(Long cid) {
+        Example example = new Example(Installer.class);
+        example.createCriteria().andEqualTo("cid", cid);
+        List<Installer> installers = installerMapper.selectByExample(example);
+        if (CollectionUtils.isEmpty(installers)) {
+            throw new AyException(ExceptionEnum.INFO_NOT_FOUND);
+        }
+        return installers;
     }
 
 

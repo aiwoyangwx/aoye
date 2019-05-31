@@ -6,4 +6,6 @@ import lombok.Data;
 @Data
 public class RunningMachineVO extends RunningMachine {
     private String cname;
+    private String versionCode;
+    private Integer versionNum;
 }

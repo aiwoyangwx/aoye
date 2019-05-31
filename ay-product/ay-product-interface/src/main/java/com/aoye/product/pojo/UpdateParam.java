@@ -10,9 +10,9 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import java.util.Date;
 
-@Table(name = "tb_running_machine")
+@Table(name = "tb_update_param")
 @Data
-public class RunningMachine {
+public class UpdateParam {
     @Id
     @JsonSerialize(using = ToStringSerializer.class)
     private Long id;
@@ -24,29 +24,33 @@ public class RunningMachine {
     private Date updateTime;
     @JsonSerialize(using = ToStringSerializer.class)
     private Long cid;
+    /**
+     * 客户端版本
+     */
     @JsonSerialize(using = ToStringSerializer.class)
     private Long iid;
     /**
      * 国家
      */
-
     private String country;
-    private String province;
+    /**
+     * 省份
+     */
+    private Integer provinceId;
+    /**
+     * 城市
+     */
     private String city;
+    /**
+     * 地区
+     */
     private String region;
-    private String address;
-    //运行里程
-    private Integer runtimeMileage;
-    //售后到期时间
-    @DateTimeFormat(pattern="yyyy-MM-dd")
-    @JsonFormat(pattern="yyyy-MM-dd")
-    private Date guaranteePeriod;
-    //使用寿命到期时间
-    @DateTimeFormat(pattern="yyyy-MM-dd")
-    @JsonFormat(pattern="yyyy-MM-dd")
-    private Date usePeriod;
-    //批次编号
+    /**
+     * 批次编号
+     */
     private String batchNumber;
-    //客户级别
+    /**
+     * 客户级别
+     */
     private Integer customerLevel;
 }

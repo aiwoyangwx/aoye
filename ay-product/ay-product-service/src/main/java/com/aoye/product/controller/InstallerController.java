@@ -19,6 +19,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 import java.net.URLEncoder;
+import java.util.List;
 
 @RestController
 @RequestMapping("installer")
@@ -198,6 +199,14 @@ public class InstallerController{
         }
     }
 
+    @GetMapping("cid")
+    public ResponseEntity<List<Installer>> getInstallersByCid(@RequestParam("cid") Long cid) {
+        if (cid == null) {
+            throw new AyException(ExceptionEnum.INCORRECT_PARAMS);
+        }
+        List<Installer> installers=installerService.getInstallersByCid(cid);
+        return ResponseEntity.ok(installers);
+    }
 
     /**
      * @Author:         Alex

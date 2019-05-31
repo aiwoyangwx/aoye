@@ -4,8 +4,11 @@ import com.aoye.common.enums.ExceptionEnum;
 import com.aoye.common.exception.AyException;
 import com.aoye.common.utils.IdWorker;
 import com.aoye.common.vo.PageResult;
+import com.aoye.product.mapper.CategoryMapper;
+import com.aoye.product.mapper.InstallerMapper;
 import com.aoye.product.mapper.RunningMachineMapper;
 import com.aoye.product.pojo.Category;
+import com.aoye.product.pojo.Installer;
 import com.aoye.product.pojo.RunningMachine;
 import com.aoye.product.vo.RunningMachineVO;
 import com.github.pagehelper.Page;
@@ -28,7 +31,10 @@ public class RunningMachineService {
     private RunningMachineMapper runningMachineMapper;
 
     @Autowired
-    private CategoryService categoryService;
+    private CategoryMapper categoryMapper;
+
+    @Autowired
+    private InstallerMapper installerMapper;
 
     @Autowired
     private IdWorker idWorker;
@@ -67,16 +73,12 @@ public class RunningMachineService {
      * @Author: Alex
      * @CreateDate: 2019/5/6
      */
-    public RunningMachineVO queryById(Long id) {
+    public RunningMachine queryById(Long id) {
         RunningMachine runningMachine = runningMachineMapper.selectByPrimaryKey(id);
-        Category category = categoryService.queryCategoryById(runningMachine.getCid());
-        if (runningMachine == null||category==null) {
+        if (runningMachine == null) {
             throw new AyException(ExceptionEnum.INFO_NOT_FOUND);
         }
-        RunningMachineVO runningMachineVO = new RunningMachineVO();
-        BeanUtils.copyProperties(runningMachine,runningMachineVO);
-        runningMachineVO.setCname(category.getCname());
-        return runningMachineVO;
+        return runningMachine;
     }
 
     /**
@@ -122,10 +124,14 @@ public class RunningMachineService {
         for (RunningMachine runningMachine : list) {
             RunningMachineVO vo = new RunningMachineVO();
             BeanUtils.copyProperties(runningMachine, vo);
-            Category category = categoryService.queryCategoryById(runningMachine.getCid());
+            Category category = categoryMapper.selectByPrimaryKey(runningMachine.getCid());
             vo.setCname(category.getCname());
+            Installer installer = installerMapper.selectByPrimaryKey(vo.getIid());
+            vo.setVersionCode(installer.getVersionCode());
+            vo.setVersionNum(installer.getVersionNum());
             listVO.add(vo);
         }
+
         //返回结果
         PageResult<RunningMachineVO> result = new PageResult<>(pageInfo.getTotal(),listVO);
         return result;

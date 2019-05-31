@@ -69,9 +69,9 @@ public class RunningMachineController {
      * @CreateDate: 2019/5/6
      */
     @GetMapping
-    public ResponseEntity<RunningMachineVO> queryById(@RequestParam("id") Long id) {
-        RunningMachineVO vo = runningMachineService.queryById(id);
-        return ResponseEntity.ok(vo);
+    public ResponseEntity<RunningMachine> queryById(@RequestParam("id") Long id) {
+        RunningMachine rm = runningMachineService.queryById(id);
+        return ResponseEntity.ok(rm);
     }
 
     /**
